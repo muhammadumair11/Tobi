@@ -1,0 +1,43 @@
+.footer {
+	padding: 2rem 0 !important;
+	background-color: #efefef;
+
+	ul {
+		font-size: 0.7rem;
+		li {
+			list-style: none;
+
+			span {
+				a {
+					img {
+						width: 10%;
+					}
+				}
+			}
+		}
+		li.label {
+			font-size: 1.2rem;
+			color: black;
+			font-weight: bold;
+		}
+	}
+
+	ul.info {
+		text-align: center;
+		padding: 0;
+		li {
+			line-height: 1.5rem;
+
+			p {
+				strong {
+					font-size: 0.8rem;
+				}
+				font-size: 0.7rem;
+			}
+		}
+		li.label {
+			margin: 0;
+			font-size: 1rem;
+		}
+	}
+}

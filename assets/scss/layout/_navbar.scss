@@ -1,0 +1,21 @@
+
+.navbar {
+    .navbar-brand {
+        img {
+            height: 50px;
+            width: 100px;
+        }
+    }
+    button {
+        background-color: transparent;
+    }
+    .nav-link {
+        font-size: .9rem;
+        color: rgb(41, 41, 41) !important;
+        
+        &:hover {
+            color: rgba(41, 41, 41, 0.678) !important;
+
+        }
+    }
+}

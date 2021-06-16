@@ -1,0 +1,13 @@
+a {
+	color: #000;
+	font-style: bold !important;
+
+	&:hover {
+		color: rgba(0, 0, 0, 0.781);
+	}
+}
+
+h1 {
+	font-weight: bold;
+	font-size: clamp(1.5rem, 5vw, 2rem);
+}

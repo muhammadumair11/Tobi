@@ -1,0 +1,23 @@
+@import "base/font";
+
+@import "abstracts/variables";
+@import "abstracts/defaults";
+
+@import "components/button";
+@import "components/card";
+
+@import "layout/navbar";
+@import "layout/container-fluid";
+@import "layout/rows";
+@import "layout/footer";
+
+
+@import "pages/index";
+@import "pages/clothing";
+
+
+
+
+body {
+	font-family: $font-regular !important;
+}

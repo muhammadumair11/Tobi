@@ -1,0 +1,15 @@
+button {
+	font-size: 0.8em;
+	background-color: transparent;
+
+	border: 1px solid black;
+	transition: all 500ms;
+
+	&:hover {
+		background-color: #000;
+		color: white;
+	}
+	&:focus {
+		outline: none;
+	}
+}

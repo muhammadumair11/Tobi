@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'MetropolisRegular';
+    src: url('../fonts/fontRegular/MetropolisRegular.eot');
+    src: url('../fonts/fontRegular/MetropolisRegular.eot') format('embedded-opentype'),
+         url('../fonts/fontRegular/MetropolisRegular.woff2') format('woff2'),
+         url('../fonts/fontRegular/MetropolisRegular.woff') format('woff'),
+         url('../fonts/fontRegular/MetropolisRegular.ttf') format('truetype'),
+         url('../fonts/fontRegular/MetropolisRegular.svg#MetropolisRegular') format('svg');
+}
+
+$font-regular: 'MetropolisRegular';
