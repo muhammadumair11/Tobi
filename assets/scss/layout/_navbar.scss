@@ -15,7 +15,61 @@
         
         &:hover {
             color: rgba(41, 41, 41, 0.678) !important;
-
         }
     }
+
+    .collapse-content {
+        position: absolute;
+        display: none;
+
+        background-color: white;
+        top: 50px;
+        left: 200px;
+
+        padding: 1rem;
+
+        text-align: left;
+        transition: all 100ms ease-in-out;
+
+        .col-lg-3 {
+            width: 200px;
+            img {
+                width: 250px;
+                height: auto;
+                margin: 5px 0;
+            }
+        }
+        
+
+        ul {
+            padding: 0;
+
+            li {
+                margin: .2rem 0;
+                
+                a {
+                    color: $link-color;
+                }
+
+                &.label {
+                    margin: .8rem 0;
+                    font-size: .8rem;
+                    font-weight: 500;
+                    text-transform: uppercase;
+                    line-height: 1.5;
+
+                    a {
+                        color: black;
+                        text-decoration: underline;
+                    }
+                }
+            }
+            
+        }
+        &.active {
+            display: block;
+        }
+
+        
+    }   
 }

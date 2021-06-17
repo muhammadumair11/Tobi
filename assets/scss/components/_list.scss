@@ -1,0 +1,19 @@
+ul {
+		font-size: 0.7rem;
+		li {
+			list-style: none;
+
+			span {
+				a {
+					img {
+						width: 10%;
+					}
+				}
+			}
+		}
+		li.label {
+			font-size: 1.2rem;
+			color: black;
+			font-weight: bold;
+		}
+	}
