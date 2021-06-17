@@ -101,7 +101,7 @@ button:focus, .content .content-details button:focus {
 }
 
 .main-container .container h1 {
-  padding: 6rem 0;
+  padding: 5.5rem 0;
 }
 
 .content {
@@ -125,7 +125,7 @@ button:focus, .content .content-details button:focus {
   opacity: 1;
 }
 .content .content-image {
-  width: 100%;
+  width: 99%;
 }
 .content .content-details {
   position: absolute;
