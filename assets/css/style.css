@@ -39,6 +39,21 @@ button:focus, .content .content-details button:focus {
   background-color: transparent;
 }
 
+ul {
+  font-size: 0.7rem;
+}
+ul li {
+  list-style: none;
+}
+ul li span a img {
+  width: 10%;
+}
+ul li.label {
+  font-size: 1.2rem;
+  color: black;
+  font-weight: bold;
+}
+
 .navbar .navbar-brand img {
   height: 50px;
   width: 100px;
@@ -52,6 +67,47 @@ button:focus, .content .content-details button:focus {
 }
 .navbar .nav-link:hover {
   color: rgba(41, 41, 41, 0.678) !important;
+}
+.navbar .collapse-content {
+  position: absolute;
+  display: none;
+  background-color: white;
+  top: 50px;
+  left: 200px;
+  padding: 1rem;
+  text-align: left;
+  transition: all 100ms ease-in-out;
+}
+.navbar .collapse-content .col-lg-3 {
+  width: 200px;
+}
+.navbar .collapse-content .col-lg-3 img {
+  width: 250px;
+  height: auto;
+  margin: 5px 0;
+}
+.navbar .collapse-content ul {
+  padding: 0;
+}
+.navbar .collapse-content ul li {
+  margin: .2rem 0;
+}
+.navbar .collapse-content ul li a {
+  color: #333;
+}
+.navbar .collapse-content ul li.label {
+  margin: .8rem 0;
+  font-size: .8rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 1.5;
+}
+.navbar .collapse-content ul li.label a {
+  color: black;
+  text-decoration: underline;
+}
+.navbar .collapse-content.active {
+  display: block;
 }
 
 .container-fluid {
@@ -67,20 +123,6 @@ button:focus, .content .content-details button:focus {
 .footer {
   padding: 2rem 0 !important;
   background-color: #efefef;
-}
-.footer ul {
-  font-size: 0.7rem;
-}
-.footer ul li {
-  list-style: none;
-}
-.footer ul li span a img {
-  width: 10%;
-}
-.footer ul li.label {
-  font-size: 1.2rem;
-  color: black;
-  font-weight: bold;
 }
 .footer ul.info {
   text-align: center;
@@ -210,26 +252,38 @@ button:focus, .content .content-details button:focus {
 .newsletter {
   background-color: #e6e6e6;
   padding: 1rem 0 !important;
-  text-align: center;
+}
+.newsletter form {
+  line-height: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.newsletter input, .newsletter button, .newsletter .content .content-details button, .content .content-details .newsletter button {
+  position: relative;
+  top: 0;
 }
 .newsletter label {
   font-size: 0.8rem;
   font-weight: bold;
+  margin: 0 1rem;
 }
 .newsletter input {
+  display: inline-block;
   background-color: white;
   border: 1px solid #aaa;
-  padding: 0.2rem 1rem;
-  margin: 1rem 0;
+  padding: .5rem 1rem;
 }
 .newsletter button, .newsletter .content .content-details button, .content .content-details .newsletter button {
-  background-color: #000;
+  background-color: #333;
   color: white;
-  font-size: 0.8rem;
+  font-size: 0.6rem;
   font-weight: bold;
-  border: 1px solid black;
-  padding: 0.3rem 1rem;
-  margin: 1rem 0;
+  border: 1px solid #333;
+  padding: 1rem 2rem;
+}
+.newsletter button:hover {
+  text-decoration: underline;
 }
 
 .clothing .card .card-header {
