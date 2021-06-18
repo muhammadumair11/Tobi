@@ -1,15 +1,33 @@
 button {
 	font-size: 0.8em;
-	background-color: transparent;
-
-	border: 1px solid black;
 	transition: all 500ms;
-
-	&:hover {
-		background-color: #000;
-		color: white;
-	}
+	padding: .5rem 1rem;
+	
 	&:focus {
 		outline: none;
 	}
 }
+
+.empty-btn {
+	background-color: transparent;
+	color: #000;
+
+	border: 1px solid black;
+
+	&:hover {
+		background-color: #000 !important;
+		color: white !important;
+	}
+}
+.filled-btn {
+	background-color: #000;
+	color: white !important;
+	
+	border: 1px solid black;
+	
+	&:hover {
+		background-color: transparent;
+		color: #000 !important;
+	}
+}
+

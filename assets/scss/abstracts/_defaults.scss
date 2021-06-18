@@ -7,6 +7,10 @@ a {
 	}
 }
 
+a.btn-a {
+	@extend button;
+}
+
 h1 {
 	font-weight: bold;
 	font-size: clamp(1.5rem, 5vw, 2rem);
