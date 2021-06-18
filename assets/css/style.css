@@ -1,20 +1,16 @@
 @font-face {
   font-family: 'MetropolisRegular';
   src: url("../fonts/fontRegular/MetropolisRegular.eot");
-  src: url("../fonts/fontRegular/MetropolisRegular.eot") format("embedded-opentype"), url("../fonts/fontRegular/MetropolisRegular.woff2") format("woff2"), url("../fonts/fontRegular/MetropolisRegular.woff") format("woff"), url("../fonts/fontRegular/MetropolisRegular.ttf") format("truetype"), url("../fonts/fontRegular/MetropolisRegular.svg#MetropolisRegular") format("svg");
-}
+  src: url("../fonts/fontRegular/MetropolisRegular.eot") format("embedded-opentype"), url("../fonts/fontRegular/MetropolisRegular.woff2") format("woff2"), url("../fonts/fontRegular/MetropolisRegular.woff") format("woff"), url("../fonts/fontRegular/MetropolisRegular.ttf") format("truetype"), url("../fonts/fontRegular/MetropolisRegular.svg#MetropolisRegular") format("svg"); }
 a {
   color: #000;
-  font-style: bold !important;
-}
-a:hover {
-  color: rgba(0, 0, 0, 0.781);
-}
+  font-style: bold !important; }
+  a:hover {
+    color: rgba(0, 0, 0, 0.781); }
 
 h1 {
   font-weight: bold;
-  font-size: clamp(1.5rem, 5vw, 2rem);
-}
+  font-size: clamp(1.5rem, 5vw, 2rem); }
 
 button, a.btn-a, .content .content-details button {
   font-size: 0.8em;
@@ -29,6 +25,7 @@ button:focus, a.btn-a:focus, .content .content-details button:focus {
   background-color: transparent;
   color: #000;
   border: 1px solid black;
+
 }
 .empty-btn:hover {
   background-color: #000 !important;
@@ -93,35 +90,32 @@ button:focus, a.btn-a:focus, .content .content-details button:focus {
   text-decoration: line-through;
 }
 
+
 ul {
-  font-size: 0.7rem;
-}
-ul li {
-  list-style: none;
-}
-ul li span a img {
-  width: 10%;
-}
-ul li.label {
-  font-size: 1.2rem;
-  color: black;
-  font-weight: bold;
-}
+  font-size: 0.7rem; }
+  ul li {
+    list-style: none; }
+    ul li span a img {
+      width: 10%; }
+  ul li.label {
+    font-size: 1.2rem;
+    color: black;
+    font-weight: bold; }
 
 .navbar .navbar-brand img {
   height: 50px;
+
   width: 100px;
 }
 .navbar button, .navbar a.btn-a, .navbar .content .content-details button, .content .content-details .navbar button {
   background-color: transparent;
 }
+
 .navbar .nav-link {
   font-size: .9rem;
-  color: #292929 !important;
-}
-.navbar .nav-link:hover {
-  color: rgba(41, 41, 41, 0.678) !important;
-}
+  color: #292929 !important; }
+  .navbar .nav-link:hover {
+    color: rgba(41, 41, 41, 0.678) !important; }
 .navbar .collapse-content {
   position: absolute;
   display: none;
@@ -130,81 +124,64 @@ ul li.label {
   left: 200px;
   padding: 1rem;
   text-align: left;
-  transition: all 100ms ease-in-out;
-}
-.navbar .collapse-content .col-lg-3 {
-  width: 200px;
-}
-.navbar .collapse-content .col-lg-3 img {
-  width: 250px;
-  height: auto;
-  margin: 5px 0;
-}
-.navbar .collapse-content ul {
-  padding: 0;
-}
-.navbar .collapse-content ul li {
-  margin: .2rem 0;
-}
-.navbar .collapse-content ul li a {
-  color: #333;
-}
-.navbar .collapse-content ul li.label {
-  margin: .8rem 0;
-  font-size: .8rem;
-  font-weight: 500;
-  text-transform: uppercase;
-  line-height: 1.5;
-}
-.navbar .collapse-content ul li.label a {
-  color: black;
-  text-decoration: underline;
-}
-.navbar .collapse-content.active {
-  display: block;
-}
+  transition: all 100ms ease-in-out; }
+  .navbar .collapse-content .col-lg-3 {
+    width: 200px; }
+    .navbar .collapse-content .col-lg-3 img {
+      width: 250px;
+      height: auto;
+      margin: 5px 0; }
+  .navbar .collapse-content ul {
+    padding: 0; }
+    .navbar .collapse-content ul li {
+      margin: .2rem 0; }
+      .navbar .collapse-content ul li a {
+        color: #333; }
+      .navbar .collapse-content ul li.label {
+        margin: .8rem 0;
+        font-size: .8rem;
+        font-weight: 500;
+        text-transform: uppercase;
+        line-height: 1.5; }
+        .navbar .collapse-content ul li.label a {
+          color: black;
+          text-decoration: underline; }
+  .navbar .collapse-content.active {
+    display: block; }
 
 .container-fluid {
-  padding: 0 !important;
-}
+  padding: 0 !important; }
 
 .row {
   width: 100%;
   margin: 1rem 0 !important;
-  padding: 0 1rem;
-}
+  padding: 0 1rem; }
 
 .footer {
   padding: 2rem 0 !important;
-  background-color: #efefef;
-}
-.footer ul.info {
-  text-align: center;
-  padding: 0;
-}
-.footer ul.info li {
-  line-height: 1.5rem;
-}
-.footer ul.info li p {
-  font-size: 0.7rem;
-}
-.footer ul.info li p strong {
-  font-size: 0.8rem;
-}
-.footer ul.info li.label {
-  margin: 0;
-  font-size: 1rem;
-}
+  background-color: #efefef; }
+  .footer ul.info {
+    text-align: center;
+    padding: 0; }
+    .footer ul.info li {
+      line-height: 1.5rem; }
+      .footer ul.info li p {
+        font-size: 0.7rem; }
+        .footer ul.info li p strong {
+          font-size: 0.8rem; }
+    .footer ul.info li.label {
+      margin: 0;
+      font-size: 1rem; }
 
 .main-container .container h1 {
-  padding: 5.5rem 0;
-}
+  padding: 5.5rem 0; }
 
 .content {
   position: relative;
   width: 100%;
   height: 100%;
   max-width: 400px;
+
   overflow: hidden;
 }
 .content .content-overlay {
@@ -282,29 +259,26 @@ ul li.label {
   padding: 1rem;
 }
 
+
 .text-container {
-  margin: 2rem 0;
-}
-.text-container .container {
-  padding: 1rem 1rem;
-}
-.text-container .container .headline {
-  text-align: center;
-  font-size: 0.9rem;
-  font-weight: bold;
-}
-.text-container .container div {
-  text-align: left;
-  font-size: 0.7rem;
-  line-height: 1.7rem;
-  word-spacing: 2px;
-}
-.text-container .container div span {
-  font-weight: bold;
-}
+  margin: 2rem 0; }
+  .text-container .container {
+    padding: 1rem 1rem; }
+    .text-container .container .headline {
+      text-align: center;
+      font-size: 0.9rem;
+      font-weight: bold; }
+    .text-container .container div {
+      text-align: left;
+      font-size: 0.7rem;
+      line-height: 1.7rem;
+      word-spacing: 2px; }
+      .text-container .container div span {
+        font-weight: bold; }
 
 .newsletter {
   background-color: #e6e6e6;
+
   padding: 1rem 0 !important;
 }
 .newsletter form {
@@ -425,6 +399,8 @@ ul li.label {
   font-weight: bold;
 }
 
+
 body {
-  font-family: "MetropolisRegular" !important;
-}
+  font-family: "MetropolisRegular" !important; }
+
+/*# sourceMappingURL=style.css.map */
