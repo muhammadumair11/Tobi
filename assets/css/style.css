@@ -12,23 +12,84 @@ h1 {
   font-weight: bold;
   font-size: clamp(1.5rem, 5vw, 2rem); }
 
-button, .content .content-details button {
+button, a.btn-a, .content .content-details button {
   font-size: 0.8em;
+  transition: all 500ms;
+  padding: .5rem 1rem;
+}
+button:focus, a.btn-a:focus, .content .content-details button:focus {
+  outline: none;
+}
+
+.empty-btn {
   background-color: transparent;
+  color: #000;
   border: 1px solid black;
-  transition: all 500ms; }
-  button:hover, .content .content-details button:hover {
-    background-color: #000;
-    color: white; }
-  button:focus, .content .content-details button:focus {
-    outline: none; }
+
+}
+.empty-btn:hover {
+  background-color: #000 !important;
+  color: white !important;
+}
+
+.filled-btn {
+  background-color: #000;
+  color: white !important;
+  border: 1px solid black;
+}
+.filled-btn:hover {
+  background-color: transparent;
+  color: #000 !important;
+}
 
 .card {
   background-color: transparent;
-  border: none; }
-  .card .card-header {
-    padding: 0;
-    background-color: transparent; }
+  border: none;
+}
+.card .card-header {
+  padding: 0;
+  background-color: transparent;
+}
+.card .card-header {
+  position: relative;
+}
+.card .card-header .hidden {
+  opacity: 0;
+  transition: all 500ms ease-out;
+}
+.card .card-header .hidden img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.card .card-header .hidden .text {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 0.6rem 0;
+  text-align: center;
+  font-size: 0.8rem;
+  background-color: rgba(255, 255, 255, 0.795);
+}
+.card .card-header .hidden:hover {
+  opacity: 1;
+}
+.card .card-body {
+  text-align: center;
+  font-size: 0.7rem;
+  color: #727272;
+  text-transform: uppercase;
+}
+.card .card-body a {
+  font-size: inherit;
+  font-weight: normal;
+  color: inherit;
+  text-decoration: none;
+}
+.card .card-body p span.cross-sale {
+  text-decoration: line-through;
+}
+
 
 ul {
   font-size: 0.7rem; }
@@ -43,9 +104,13 @@ ul {
 
 .navbar .navbar-brand img {
   height: 50px;
-  width: 100px; }
-.navbar button, .navbar .content .content-details button, .content .content-details .navbar button {
-  background-color: transparent; }
+
+  width: 100px;
+}
+.navbar button, .navbar a.btn-a, .navbar .content .content-details button, .content .content-details .navbar button {
+  background-color: transparent;
+}
+
 .navbar .nav-link {
   font-size: .9rem;
   color: #292929 !important; }
@@ -116,67 +181,84 @@ ul {
   width: 100%;
   height: 100%;
   max-width: 400px;
-  overflow: hidden; }
-  .content .content-overlay {
-    background: rgba(255, 255, 255, 0.664);
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    -webkit-transition: all 0.4s ease-in-out 0s;
-    -moz-transition: all 0.4s ease-in-out 0s;
-    transition: all 0.4s ease-in-out 0s; }
-  .content:hover .content-overlay {
-    opacity: 1; }
-  .content .content-image {
-    width: 99%; }
-  .content .content-details {
-    position: absolute;
-    text-align: center;
-    padding-left: 1em;
-    padding-right: 1em;
-    width: 100%;
-    top: 50%;
-    left: 50%;
-    opacity: 0;
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    -webkit-transition: all 0.3s ease-in-out 0s;
-    -moz-transition: all 0.3s ease-in-out 0s;
-    transition: all 0.3s ease-in-out 0s; }
-    .content .content-details h5 {
-      color: #fff;
-      font-weight: 500;
-      letter-spacing: 0.15em;
-      margin-bottom: 0.5em;
-      text-transform: uppercase; }
-      .content .content-details h5 i {
-        font-size: 2rem !important;
-        color: black !important; }
-    .content .content-details button {
-      color: #000;
-      padding: 0.3rem 1rem; }
-  .content:hover .content-details {
-    opacity: 1; }
+
+  overflow: hidden;
+}
+.content .content-overlay {
+  background: rgba(255, 255, 255, 0.664);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+.content:hover .content-overlay {
+  opacity: 1;
+}
+.content .content-image {
+  width: 99%;
+}
+.content .content-details {
+  position: absolute;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+.content .content-details h5 {
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+}
+.content .content-details h5 i {
+  font-size: 2rem !important;
+  color: black !important;
+}
+.content .content-details a.btn-a, .content .content-details button {
+  color: #000;
+  padding: 0.3rem 1rem;
+}
+.content:hover .content-details {
+  opacity: 1;
+}
 
 .ig-images {
-  background-color: #efefef; }
-  .ig-images h1 {
-    text-align: center;
-    padding: 2rem 1rem; }
-    .ig-images h1 span {
-      text-decoration: underline; }
-  .ig-images .row {
-    padding: 0 2rem; }
-    .ig-images .row .col-lg-2 {
-      padding: .3rem;
-      height: clamp(250px, 100vw, 150px) !important; }
-  .ig-images .bottom-text {
-    text-align: center;
-    font-size: 0.8rem;
-    font-weight: bold;
-    padding: 1rem; }
+  background-color: #efefef;
+}
+.ig-images h1 {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+.ig-images h1 span {
+  text-decoration: underline;
+}
+.ig-images .row {
+  padding: 0 2rem;
+}
+.ig-images .row .col-lg-2 {
+  padding: .3rem;
+  height: clamp(250px, 100vw, 150px) !important;
+}
+.ig-images .bottom-text h1 {
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: bold;
+  padding: 1rem;
+}
+
 
 .text-container {
   margin: 2rem 0; }
@@ -196,65 +278,127 @@ ul {
 
 .newsletter {
   background-color: #e6e6e6;
-  padding: 1rem 0 !important; }
-  .newsletter form {
-    line-height: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-  .newsletter input, .newsletter button, .newsletter .content .content-details button, .content .content-details .newsletter button {
-    position: relative;
-    top: 0; }
-  .newsletter label {
-    font-size: 0.8rem;
-    font-weight: bold;
-    margin: 0 1rem; }
-  .newsletter input {
-    display: inline-block;
-    background-color: white;
-    border: 1px solid #aaa;
-    padding: .5rem 1rem; }
-  .newsletter button, .newsletter .content .content-details button, .content .content-details .newsletter button {
-    background-color: #333;
-    color: white;
-    font-size: 0.6rem;
-    font-weight: bold;
-    border: 1px solid #333;
-    padding: 1rem 2rem; }
-    .newsletter button:hover {
-      text-decoration: underline; }
 
-.clothing .card .card-header {
-  position: relative; }
-  .clothing .card .card-header .hidden {
-    opacity: 0;
-    transition: all 500ms ease-out; }
-    .clothing .card .card-header .hidden img {
-      position: absolute;
-      top: 0;
-      left: 0; }
-    .clothing .card .card-header .hidden .text {
-      position: absolute;
-      bottom: 0;
-      width: 100%;
-      padding: 0.6rem 0;
-      text-align: center;
-      font-size: 0.8rem;
-      background-color: rgba(255, 255, 255, 0.795); }
-    .clothing .card .card-header .hidden:hover {
-      opacity: 1; }
-.clothing .card .card-body {
-  text-align: center;
+  padding: 1rem 0 !important;
+}
+.newsletter form {
+  line-height: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.newsletter input, .newsletter button, .newsletter a.btn-a, .newsletter .content .content-details button, .content .content-details .newsletter button {
+  position: relative;
+  top: 0;
+}
+.newsletter label {
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin: 0 1rem;
+}
+.newsletter input {
+  display: inline-block;
+  background-color: white;
+  border: 1px solid #aaa;
+  padding: .5rem 1rem;
+}
+.newsletter button, .newsletter a.btn-a, .newsletter .content .content-details button, .content .content-details .newsletter button {
+  background-color: #333;
+  color: white;
+  font-size: 0.6rem;
+  font-weight: bold;
+  border: 1px solid #333;
+  padding: 1rem 2rem;
+}
+.newsletter button:hover, .newsletter a.btn-a:hover {
+  text-decoration: underline;
+}
+
+.name .product-name {
+  font-weight: normal;
+}
+.name .product-detail {
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.product-info {
+  margin-left: 20px;
+}
+.product-info *:not(button, a.btn-a, i) {
+  padding: 5px 0;
+}
+.product-info .selected {
+  font-weight: bold;
+}
+.product-info .selected span {
+  font-weight: normal;
   font-size: 0.7rem;
-  color: #727272;
-  text-transform: uppercase; }
-  .clothing .card .card-body a {
-    font-size: inherit;
-    font-weight: normal;
-    color: inherit;
-    text-decoration: none; }
-  .clothing .card .card-body p span.cross-sale {
-    text-decoration: line-through; }
+  padding: 0;
+  line-height: 0;
+}
+.product-info a:not(.info a) {
+  display: inline-block;
+  padding: 15px 10px;
+  border-radius: 100px;
+  line-height: 0;
+}
+.product-info a:not(.info a).active {
+  background-color: #000;
+  color: white;
+}
+.product-info .size .info {
+  font-size: 0.6rem;
+  padding: 5px;
+}
+.product-info .size .info * {
+  padding: 0 5px;
+}
+.product-info .color a {
+  padding: 2px !important;
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  border-radius: 100px;
+  background-color: #0093e9;
+  background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+}
+.product-info .buttons i {
+  font-size: 1rem;
+  line-height: 0;
+}
+.product-info div small {
+  padding: 0;
+  font-size: 0.5rem;
+}
+
+.modal {
+  width: 100%;
+}
+.modal .modal-body h1.heading {
+  padding: 1rem 0;
+  text-align: center;
+  font-size: .9rem;
+}
+.modal .modal-body .col-lg-6 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.modal .modal-body .col-lg-6 .name {
+  text-align: center;
+}
+.modal .modal-body .col-lg-6 .name h1 {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin: 0;
+}
+.modal .modal-body .col-lg-6 .name .price {
+  font-size: .8rem;
+  font-weight: bold;
+}
+
 
 body {
   font-family: "MetropolisRegular" !important; }
