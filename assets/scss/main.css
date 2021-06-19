@@ -150,14 +150,6 @@ ul {
     .footer ul.info li.label {
       margin: 0;
       font-size: 1rem; }
-  .footer .footer-bottom {
-    height: 40px; }
-    .footer .footer-bottom ul {
-      list-style-type: none;
-      display: flex; }
-      .footer .footer-bottom ul li {
-        font-size: 15px;
-        margin-right: 5px; }
 
 .main-container .container h1 {
   padding: 5.5rem 0; }
@@ -341,28 +333,7 @@ ul {
         font-size: .8rem;
         font-weight: bold; }
 
-.HelpingPage .leftmenu {
-  background-color: #efefef;
-  padding: 1% 1%; }
-  .HelpingPage .leftmenu ul {
-    list-style-type: none; }
-    .HelpingPage .leftmenu ul li {
-      font-size: 13   px;
-      font-weight: 500;
-      text-align: left;
-      margin-top: 10px; }
-      .HelpingPage .leftmenu ul li:active {
-        text-decoration: underline; }
-.HelpingPage .center {
-  padding-left: 2%;
-  padding-right: 4%; }
-  .HelpingPage .center ul {
-    font-size: 15px; }
-    .HelpingPage .center ul li {
-      list-style-type: disc;
-      margin-top: 6px; }
-
 body {
   font-family: "MetropolisRegular" !important; }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=main.css.map */
