@@ -181,36 +181,29 @@ ul li.label {
 
 .footer {
   padding: 2rem 0 !important;
-  background-color: #efefef;
-}
-.footer ul.info {
-  text-align: center;
-  padding: 0;
-}
-.footer ul.info li {
-  line-height: 1.5rem;
-}
-.footer ul.info li p {
-  font-size: 0.7rem;
-}
-.footer ul.info li p strong {
-  font-size: 0.8rem;
-}
-.footer ul.info li.label {
-  margin: 0;
-  font-size: 1rem;
-}
-.footer .footer-bottom {
-  height: 40px;
-}
-.footer .footer-bottom ul {
-  list-style-type: none;
-  display: flex;
-}
-.footer .footer-bottom ul li {
-  font-size: 15px;
-  margin-right: 5px;
-}
+
+  background-color: #efefef; }
+  .footer ul.info {
+    text-align: center;
+    padding: 0; }
+    .footer ul.info li {
+      line-height: 1.5rem; }
+      .footer ul.info li p {
+        font-size: 0.7rem; }
+        .footer ul.info li p strong {
+          font-size: 0.8rem; }
+    .footer ul.info li.label {
+      margin: 0;
+      font-size: 1rem; }
+  .footer .footer-bottom {
+    height: 40px; }
+    .footer .footer-bottom ul {
+      list-style-type: none;
+      display: flex; }
+      .footer .footer-bottom ul li {
+        font-size: 15px;
+        margin-right: 4px; }
+
 
 .main-container .container h1 {
   padding: 5.5rem 0;
@@ -459,15 +452,17 @@ ul li.label {
 }
 .HelpingPage .center {
   padding-left: 2%;
-  padding-right: 4%;
-}
-.HelpingPage .center ul {
-  font-size: 15px;
-}
-.HelpingPage .center ul li {
-  list-style-type: disc;
-  margin-top: 6px;
-}
+
+  padding-right: 4%; }
+  .HelpingPage .center ul {
+    font-size: 15px; }
+    .HelpingPage .center ul li {
+      list-style-type: disc;
+      margin-top: 6px; }
+.HelpingPage .Privacy .label {
+  border-bottom: 1px solid #e2e2e2;
+  margin-bottom: 1.5%; }
+
 
 .shopping-bag table tr td {
   vertical-align: middle !important;
