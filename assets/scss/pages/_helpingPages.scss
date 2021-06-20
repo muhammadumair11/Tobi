@@ -1,9 +1,30 @@
 .HelpingPage{
     .leftmenu{
-        background-color: #efefef;
-        text-align: center;
-        margin-top: 2%;
-       
+        background-color: #efefef; 
+        padding:1% 1%;
+        ul{
+            list-style-type: none;
+            li{
+                font-size: 13   px;
+                font-weight: 500;
+                text-align: left;
+                margin-top: 10px;
+            &:active{
+                text-decoration: underline;
+            }
+            }
+        }
+    }
+    .center{
+        padding-left: 2%;
+        padding-right: 4%;
+        ul{
+             font-size: 15px;
+            li{
+                list-style-type: disc;
+                margin-top: 6px;
+            }
+        }
     }
     
 }

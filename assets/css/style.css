@@ -200,6 +200,17 @@ ul li.label {
   margin: 0;
   font-size: 1rem;
 }
+.footer .footer-bottom {
+  height: 40px;
+}
+.footer .footer-bottom ul {
+  list-style-type: none;
+  display: flex;
+}
+.footer .footer-bottom ul li {
+  font-size: 15px;
+  margin-right: 5px;
+}
 
 .main-container .container h1 {
   padding: 5.5rem 0;
@@ -430,6 +441,34 @@ ul li.label {
   font-weight: bold;
 }
 
+.HelpingPage .leftmenu {
+  background-color: #efefef;
+  padding: 1% 1%;
+}
+.HelpingPage .leftmenu ul {
+  list-style-type: none;
+}
+.HelpingPage .leftmenu ul li {
+  font-size: 13   px;
+  font-weight: 500;
+  text-align: left;
+  margin-top: 10px;
+}
+.HelpingPage .leftmenu ul li:active {
+  text-decoration: underline;
+}
+.HelpingPage .center {
+  padding-left: 2%;
+  padding-right: 4%;
+}
+.HelpingPage .center ul {
+  font-size: 15px;
+}
+.HelpingPage .center ul li {
+  list-style-type: disc;
+  margin-top: 6px;
+}
+
 .shopping-bag table tr td {
   vertical-align: middle !important;
 }
@@ -482,10 +521,4 @@ ul li.label {
 }
 .shopping-bag .total .payment-calc div.promo input:focus {
   outline: none;
-}
-
-.HelpingPage .leftmenu {
-  background-color: #efefef;
-  text-align: center;
-  margin-top: 2%;
 }
