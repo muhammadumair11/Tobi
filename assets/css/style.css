@@ -361,6 +361,9 @@ ul {
     .HelpingPage .center ul li {
       list-style-type: disc;
       margin-top: 6px; }
+.HelpingPage .Privacy .label {
+  border-bottom: 1px solid #e2e2e2;
+  margin-bottom: 1.5%; }
 
 body {
   font-family: "MetropolisRegular" !important; }
