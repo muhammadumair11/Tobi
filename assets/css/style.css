@@ -3,6 +3,10 @@
   src: url("../fonts/fontRegular/MetropolisRegular.eot");
   src: url("../fonts/fontRegular/MetropolisRegular.eot") format("embedded-opentype"), url("../fonts/fontRegular/MetropolisRegular.woff2") format("woff2"), url("../fonts/fontRegular/MetropolisRegular.woff") format("woff"), url("../fonts/fontRegular/MetropolisRegular.ttf") format("truetype"), url("../fonts/fontRegular/MetropolisRegular.svg#MetropolisRegular") format("svg");
 }
+body {
+  font-family: "MetropolisRegular" !important;
+}
+
 a {
   color: #000;
   font-style: bold !important;
@@ -478,8 +482,4 @@ ul li.label {
 }
 .shopping-bag .total .payment-calc div.promo input:focus {
   outline: none;
-}
-
-body {
-  font-family: "MetropolisRegular" !important;
 }
