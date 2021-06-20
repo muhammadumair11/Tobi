@@ -430,6 +430,12 @@ ul li.label {
   font-weight: bold;
 }
 
+.HelpingPage .leftmenu {
+  background-color: #efefef;
+  text-align: center;
+  margin-top: 2%;
+}
+
 .shopping-bag table tr td {
   vertical-align: middle !important;
 }
