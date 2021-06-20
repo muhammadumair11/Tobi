@@ -1,0 +1,75 @@
+.shopping-bag {
+    table {
+        tr {
+            td {
+                vertical-align: middle !important;
+            }
+            th {
+                font-size: .8rem;
+                font-weight: normal;
+            }
+            .actions {
+                a {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    .total {
+        .payment-brands {
+            .links {
+                * {
+                    padding-right: 10px;
+                }
+            }
+            p {
+                margin: 5px 0;
+                font-size: .8rem;
+                font-weight: bold;
+            }
+            .brand-logos {
+                margin: 10px 0;
+                img {
+                    width: 50px;
+                }
+            }
+            .contact {
+                p {
+                    display: inline;
+                    margin-right: 10px;
+                }
+            }
+        }
+
+        .payment-calc {
+            div {
+                @include flex(space-between);
+                max-width: 500px;
+                width: 400px;
+
+                span {
+                    display: inline-block;
+                    margin: 5px 0;
+                    font-size: .8rem;
+
+                    a {
+                        text-decoration: underline;
+                    }
+
+                }
+                &.promo {
+                    margin: 10px 0;
+                    input {
+                        border: none;
+
+                        &:focus {
+                            outline: none;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}
