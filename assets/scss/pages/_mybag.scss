@@ -41,8 +41,9 @@
                 }
             }
         }
-
-        .payment-calc {
+    }
+}
+.payment-calc {
             div {
                 @include flex(space-between);
                 max-width: 500px;
@@ -51,7 +52,6 @@
                 span {
                     display: inline-block;
                     margin: 5px 0;
-                    font-size: .8rem;
 
                     a {
                         text-decoration: underline;
@@ -71,5 +71,3 @@
                 }
             }
         }
-    }
-}

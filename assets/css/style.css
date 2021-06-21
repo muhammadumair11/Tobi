@@ -16,14 +16,23 @@ a:hover {
   color: rgba(0, 0, 0, 0.781);
 }
 
+span {
+  font-size: .8rem;
+}
+
 h1 {
   font-weight: bold;
   font-size: clamp(1.5rem, 5vw, 2rem);
 }
 
+p {
+  font-size: .8rem;
+}
+
 button, a.btn-a, .content .content-details button {
   font-size: 0.8em;
   transition: all 500ms;
+  min-width: 70px;
   padding: .5rem 1rem;
 }
 button:focus, a.btn-a:focus, .content .content-details button:focus {
@@ -113,6 +122,28 @@ ul li.label {
   font-weight: bold;
 }
 
+.form-group {
+  border: 1px solid #efefef;
+  padding: 8px;
+}
+.form-group label {
+  margin: 0 !important;
+  color: #333;
+  font-size: 0.8rem;
+}
+.form-group select, .form-group input {
+  border: none !important;
+}
+.form-group select:active, .form-group select:focus, .form-group input:active, .form-group input:focus {
+  outline: 0px !important;
+  -webkit-appearance: none;
+  box-shadow: none !important;
+}
+.form-group input {
+  padding: .8rem;
+  height: 0 !important;
+}
+
 .navbar .navbar-brand img {
   height: 50px;
   width: 100px;
@@ -178,32 +209,42 @@ ul li.label {
   margin: 1rem 0 !important;
   padding: 0 1rem;
 }
+.row .col-lg-6 {
+  margin: 1rem 0;
+}
 
 .footer {
   padding: 2rem 0 !important;
-
-  background-color: #efefef; }
-  .footer ul.info {
-    text-align: center;
-    padding: 0; }
-    .footer ul.info li {
-      line-height: 1.5rem; }
-      .footer ul.info li p {
-        font-size: 0.7rem; }
-        .footer ul.info li p strong {
-          font-size: 0.8rem; }
-    .footer ul.info li.label {
-      margin: 0;
-      font-size: 1rem; }
-  .footer .footer-bottom {
-    height: 40px; }
-    .footer .footer-bottom ul {
-      list-style-type: none;
-      display: flex; }
-      .footer .footer-bottom ul li {
-        font-size: 15px;
-        margin-right: 4px; }
-
+  background-color: #efefef;
+}
+.footer ul.info {
+  text-align: center;
+  padding: 0;
+}
+.footer ul.info li {
+  line-height: 1.5rem;
+}
+.footer ul.info li p {
+  font-size: 0.7rem;
+}
+.footer ul.info li p strong {
+  font-size: 0.8rem;
+}
+.footer ul.info li.label {
+  margin: 0;
+  font-size: 1rem;
+}
+.footer .footer-bottom {
+  height: 40px;
+}
+.footer .footer-bottom ul {
+  list-style-type: none;
+  display: flex;
+}
+.footer .footer-bottom ul li {
+  font-size: 15px;
+  margin-right: 4px;
+}
 
 .main-container .container h1 {
   padding: 5.5rem 0;
@@ -368,7 +409,6 @@ ul li.label {
 }
 .product-info .selected span {
   font-weight: normal;
-  font-size: 0.7rem;
   padding: 0;
   line-height: 0;
 }
@@ -452,17 +492,19 @@ ul li.label {
 }
 .HelpingPage .center {
   padding-left: 2%;
-
-  padding-right: 4%; }
-  .HelpingPage .center ul {
-    font-size: 15px; }
-    .HelpingPage .center ul li {
-      list-style-type: disc;
-      margin-top: 6px; }
+  padding-right: 4%;
+}
+.HelpingPage .center ul {
+  font-size: 15px;
+}
+.HelpingPage .center ul li {
+  list-style-type: disc;
+  margin-top: 6px;
+}
 .HelpingPage .Privacy .label {
   border-bottom: 1px solid #e2e2e2;
-  margin-bottom: 1.5%; }
-
+  margin-bottom: 1.5%;
+}
 
 .shopping-bag table tr td {
   vertical-align: middle !important;
@@ -492,7 +534,8 @@ ul li.label {
   display: inline;
   margin-right: 10px;
 }
-.shopping-bag .total .payment-calc div {
+
+.payment-calc div {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -500,20 +543,33 @@ ul li.label {
   max-width: 500px;
   width: 400px;
 }
-.shopping-bag .total .payment-calc div span {
+.payment-calc div span {
   display: inline-block;
   margin: 5px 0;
-  font-size: .8rem;
 }
-.shopping-bag .total .payment-calc div span a {
+.payment-calc div span a {
   text-decoration: underline;
 }
-.shopping-bag .total .payment-calc div.promo {
+.payment-calc div.promo {
   margin: 10px 0;
 }
-.shopping-bag .total .payment-calc div.promo input {
+.payment-calc div.promo input {
   border: none;
 }
-.shopping-bag .total .payment-calc div.promo input:focus {
+.payment-calc div.promo input:focus {
   outline: none;
+}
+
+.signin {
+  padding: 4rem 0 !important;
+}
+
+.col-lg-6 {
+  border-right: 1px solid #efefef;
+}
+
+.submit-btn {
+  width: 100% !important;
+  font-size: 1rem;
+  padding: 1rem;
 }

@@ -13,6 +13,10 @@ a {
 	}
 }
 
+span {
+	font-size: .8rem;
+}
+
 a.btn-a {
 	@extend button;
 }
@@ -20,5 +24,8 @@ a.btn-a {
 h1 {
 	font-weight: bold;
 	font-size: clamp(1.5rem, 5vw, 2rem);
+}
+p {
+	font-size: .8rem;
 }
 
