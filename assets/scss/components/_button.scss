@@ -1,6 +1,7 @@
 button {
 	font-size: 0.8em;
 	transition: all 500ms;
+	min-width: 70px;
 	padding: .5rem 1rem;
 	
 	&:focus {
