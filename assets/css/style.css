@@ -509,6 +509,10 @@ ul li.label {
 .shopping-bag table tr td {
   vertical-align: middle !important;
 }
+.shopping-bag table tr td.items {
+  width: 600px;
+  min-width: 300px;
+}
 .shopping-bag table tr th {
   font-size: .8rem;
   font-weight: normal;
@@ -540,8 +544,6 @@ ul li.label {
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
-  max-width: 500px;
-  width: 400px;
 }
 .payment-calc div span {
   display: inline-block;
@@ -562,10 +564,6 @@ ul li.label {
 
 .signin {
   padding: 4rem 0 !important;
-}
-
-.col-lg-6 {
-  border-right: 1px solid #efefef;
 }
 
 .submit-btn {
