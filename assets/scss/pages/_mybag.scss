@@ -3,6 +3,12 @@
         tr {
             td {
                 vertical-align: middle !important;
+
+                &.items {
+
+                    width: 600px;
+                    min-width: 300px;
+                }
             }
             th {
                 font-size: .8rem;
@@ -46,8 +52,6 @@
 .payment-calc {
             div {
                 @include flex(space-between);
-                max-width: 500px;
-                width: 400px;
 
                 span {
                     display: inline-block;
