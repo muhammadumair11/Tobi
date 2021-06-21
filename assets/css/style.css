@@ -49,6 +49,12 @@ button:focus, a.btn-a:focus, .content .content-details button:focus {
   color: white !important;
 }
 
+.full-width-btn {
+  width: 100% !important;
+  font-size: 1rem;
+  padding: .6rem;
+}
+
 .filled-btn {
   background-color: #000;
   color: white !important;
@@ -568,9 +574,6 @@ ul li.label {
   padding: 0 !important;
   margin: 0 !important;
 }
-
-.submit-btn {
-  width: 100% !important;
-  font-size: 1rem;
-  padding: 1rem;
+.signin .row .col-lg-6 {
+  margin: 0 !important;
 }
