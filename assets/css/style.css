@@ -124,7 +124,7 @@ ul li.label {
 
 .form-group {
   border: 1px solid #efefef;
-  padding: 8px;
+  padding: 2px 8px;
 }
 .form-group label {
   margin: 0 !important;
@@ -210,7 +210,7 @@ ul li.label {
   padding: 0 1rem;
 }
 .row .col-lg-6 {
-  margin: 1rem 0;
+  margin: .5rem 0;
 }
 
 .footer {
@@ -510,8 +510,7 @@ ul li.label {
   vertical-align: middle !important;
 }
 .shopping-bag table tr td.items {
-  width: 600px;
-  min-width: 300px;
+  max-width: 300px;
 }
 .shopping-bag table tr th {
   font-size: .8rem;
@@ -564,6 +563,10 @@ ul li.label {
 
 .signin {
   padding: 4rem 0 !important;
+}
+.signin .row {
+  padding: 0 !important;
+  margin: 0 !important;
 }
 
 .submit-btn {
