@@ -1,0 +1,22 @@
+{
+  "name": "tobi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/muhammadumair11/Tobi.git"
+  },
+  "author": "Muhammad-Umair,Mian-Aizaz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/muhammadumair11/Tobi/issues"
+  },
+  "homepage": "https://github.com/muhammadumair11/Tobi#readme",
+  "dependencies": {
+    "flag-icon-css": "^3.5.0"
+  }
+}

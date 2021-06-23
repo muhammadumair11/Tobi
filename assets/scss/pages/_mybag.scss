@@ -32,12 +32,6 @@
                 font-size: .8rem;
                 font-weight: bold;
             }
-            .brand-logos {
-                margin: 10px 0;
-                img {
-                    width: 50px;
-                }
-            }
             .contact {
                 p {
                     display: inline;
@@ -47,6 +41,11 @@
         }
     }
 }
+.brand-logos {
+                img {
+                    width: 50px;
+                }
+            }
 .payment-calc {
             div {
                 @include flex(space-between);
