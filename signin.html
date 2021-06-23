@@ -14,6 +14,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link rel="stylesheet" href="assets/css/style.css">
+
+    <link rel="stylesheet" href="node_modules/flag-icon-css/css/flag-icon.css">
+    <link rel="stylesheet" href="node_modules/flag-icon-css/css/flag-icon.min.css">
 </head>
 
 <body>
@@ -24,7 +27,7 @@
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
+    
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto px-4">
                     <li class="nav-item active">
@@ -154,7 +157,7 @@
                                     </ul>
                                 </div>
                                 <div class="col-lg-3">
-
+    
                                 </div>
                                 <div class="col-lg-3">
                                     <img src="assets/img/nav-img/img4.jpg" class="img-fluid" alt="">
@@ -276,7 +279,7 @@
                                         <li> <a href="/shoes/flats/slide-flats">Slides</a> </li>
                                         <li> <a href="/shoes/flats">All Flats</a> </li>
                                     </ul>
-
+    
                                     <ul class="links">
                                         <li class="label"><a href="">Sneakers</a></li>
                                     </ul>
@@ -393,7 +396,7 @@
                                         <li> <a href="">Best of Sale</a> </li>
                                         <li> <a href="">Designer on Sale</a> </li>
                                     </ul>
-
+    
                                     <ul class="links">
                                         <li class="label"><a href="">Last Chance</a></li>
                                     </ul>
@@ -410,21 +413,41 @@
                 </ul>
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a href="" class="nav-link">Money </a>
+                        <div class="dropdown">
+                            <button type="button" class="empty-btn dropdown-toggle text-dark py-2" data-toggle="dropdown">
+                                <span class="flag-icon flag-icon-us mx-1"></span>United States Dollar
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#"></a>
+                                <a class="dropdown-item" href="#"><span class="flag-icon flag-icon-gb mx-1"></span>Great
+                                    Britian Pound</a>
+                                <a class="dropdown-item" href="#"><span
+                                        class="flag-icon flag-icon-au mx-1"></span>Australian Dollar</a>
+                                <a class="dropdown-item" href="#"><span class="flag-icon flag-icon-nz mx-1"></span>New
+                                    Zealand Dollar</a>
+                                <a class="dropdown-item" href="#"><span class="flag-icon flag-icon-pk mx-1"></span>Pakistani
+                                    Rupees</a>
+                                <a class="dropdown-item" href="#"><span class="flag-icon flag-icon-in mx-1"></span>Indian
+                                    Rupees</a>
+                                <a class="dropdown-item" href="#"><span class="flag-icon flag-icon-cn mx-1"></span>Chinese
+                                    yuan</a>
+                                <a class="dropdown-item" href="#"><span class="flag-icon flag-icon-eu mx-1"></span>Euro</a>
+                            </div>
+                        </div>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="">Search</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="">Sign in</a>
+                        <a class="nav-link" href="signin.html">Sign in</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="my-bag.html">My Bag</a>
                     </li>
                 </ul>
             </div>
-
-
+    
+    
         </div>
     </nav>
 
@@ -514,22 +537,22 @@
                         </li>
                         <li class="font-weight-bold">SELECT COUNTRY</li>
                         <li>
-                            <span><a href=""><img src="assets/img/flag-icons/united-kingdom.png" class="img-fluid"
+                            <span><a href=""><img src="/assets/img/flag-icons/united-kingdom.png" class="img-fluid"
                                         alt=""></a></span>
-                            <span><a href=""><img src="assets/img/flag-icons/pakistan.png" class="img-fluid"
+                            <span><a href=""><img src="/assets/img/flag-icons/pakistan.png" class="img-fluid"
                                         alt=""></a></span>
-                            <span><a href=""><img src="assets/img/flag-icons/united-arab-emirates.png" class="img-fluid"
+                            <span><a href=""><img src="/assets/img/flag-icons/united-arab-emirates.png" class="img-fluid"
                                         alt=""></a></span>
-                            <span><a href=""><img src="assets/img/flag-icons/united-states.png" class="img-fluid"
+                            <span><a href=""><img src="/assets/img/flag-icons/united-states.png" class="img-fluid"
                                         alt=""></a></span>
                         </li>
                         <li class="font-weight-bold">Other Countries</li>
                         <li>
-                            <span><a href=""><img src="assets/img/flag-icons/united-states.png" class="img-fluid"
+                            <span><a href=""><img src="/assets/img/flag-icons/united-states.png" class="img-fluid"
                                         alt=""></a></span>
                         </li>
-
-
+    
+    
                     </ul>
                 </div>
                 <div class="col-lg-2">
@@ -553,12 +576,39 @@
                 <div class="col-lg-4">
                     <ul class="links">
                         <li class="label">Customer Service</li>
-                        <li class=""><a href="">Sizes</a></li>
-                        <li class=""><a href="">FAQ & Assistance</a></li>
+                        <li class=""><a href="SizeGuide.html">Sizes</a></li>
+                        <li class=""><a href="FAQs.html">FAQ & Assistance</a></li>
                         <li class=""><a href="Shipping.html">Shipping</a></li>
                         <li class=""><a href="ReturnPolicy.html">Returns and Exchange policy</a></li>
                         <li class=""><a href="">Contect Us</a></li>
                     </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row ">
+            <div class="col-lg-6 footer-bottom">
+                <ul>
+                    <li> &copy</li>
+                    <li> <span style="color: red;">Aromatazeen</span></li>
+                    <li>All Rights Reserved. </li>
+                    <a href="">
+                        <li> <span style="border-right: 2px solid grey;">Terms Of use &nbsp;</span> </li>
+                    </a>
+                    <a href="Privacy.html">
+                        <li> <span style="border-right: 2px solid grey;">Privacy Policy &nbsp;</span> </li>
+                    </a>
+                    <a href="Cokies.html">
+                        <li> <span style="border-right: 2px solid grey;">Cokies Policy &nbsp;</span> </li>
+                    </a>
+                </ul>
+            </div>
+            <div class="col-lg-6">
+                <div class="brand-logos d-flex justify-content-center">
+                    <img src="assets/img/payment-logos/visa.png" class="img-fluid px-1" alt="">
+                    <img src="assets/img/payment-logos/master-card.png" class="img-fluid px-1" alt="">
+                    <img src="assets/img/payment-logos/american-expres.png" class="img-fluid px-1" alt="">
+                    <img src="assets/img/payment-logos/jcb.jpeg" class="img-fluid px-1" alt="">
+                    <img src="assets/img/payment-logos/paypal.png" class="img-fluid px-1" alt="">
                 </div>
             </div>
         </div>
