@@ -41,7 +41,7 @@ button:focus, a.btn-a:focus, .content .content-details button:focus {
 
 .empty-btn {
   background-color: transparent;
-  color: #000;
+  color: #000 !important;
   border: 1px solid black;
 }
 .empty-btn:hover {
@@ -56,12 +56,12 @@ button:focus, a.btn-a:focus, .content .content-details button:focus {
 }
 
 .filled-btn {
-  background-color: #000;
+  background-color: #000 !important;
   color: white !important;
   border: 1px solid black;
 }
 .filled-btn:hover {
-  background-color: transparent;
+  background-color: transparent !important;
   color: #000 !important;
 }
 
@@ -246,6 +246,7 @@ ul li.label {
 .footer .footer-bottom ul {
   list-style-type: none;
   display: flex;
+  align-items: center;
 }
 .footer .footer-bottom ul li {
   font-size: 15px;
@@ -418,13 +419,13 @@ ul li.label {
   padding: 0;
   line-height: 0;
 }
-.product-info a:not(.info a) {
+.product-info a:not(.info a, .card a) {
   display: inline-block;
   padding: 15px 10px;
   border-radius: 100px;
   line-height: 0;
 }
-.product-info a:not(.info a).active {
+.product-info a:not(.info a, .card a).active {
   background-color: #000;
   color: white;
 }
@@ -451,6 +452,17 @@ ul li.label {
 .product-info div small {
   padding: 0;
   font-size: 0.5rem;
+}
+.product-info .accordion {
+  max-width: 300px;
+}
+.product-info .accordion .card-header h6.font-weight-bold {
+  margin: 0;
+  padding: 0;
+  font-size: .8rem;
+}
+.product-info .accordion .card-body p {
+  font-size: .6rem;
 }
 
 .modal {
@@ -533,15 +545,13 @@ ul li.label {
   font-size: .8rem;
   font-weight: bold;
 }
-.shopping-bag .total .payment-brands .brand-logos {
-  margin: 10px 0;
-}
-.shopping-bag .total .payment-brands .brand-logos img {
-  width: 50px;
-}
 .shopping-bag .total .payment-brands .contact p {
   display: inline;
   margin-right: 10px;
+}
+
+.brand-logos img {
+  width: 50px;
 }
 
 .payment-calc div {

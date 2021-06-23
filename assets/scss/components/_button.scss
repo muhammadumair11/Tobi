@@ -11,7 +11,7 @@ button {
 
 .empty-btn {
 	background-color: transparent;
-	color: #000;
+	color: #000 !important;
 
 	border: 1px solid black;
 
@@ -28,13 +28,13 @@ button {
 }
 
 .filled-btn {
-	background-color: #000;
+	background-color: #000 !important;
 	color: white !important;
 	
 	border: 1px solid black;
 	
 	&:hover {
-		background-color: transparent;
+		background-color: transparent !important;
 		color: #000 !important;
 	}
 }
